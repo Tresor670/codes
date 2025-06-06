@@ -81,8 +81,8 @@
       unauthorized access. They ensure data integrity, build user trust, and are essential in today's digital age for maintaining
       cybersecurity and compliance.
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/SSL-padlock.svg/800px-SSL-padlock.svg.png"
-         alt="Secure Padlock Icon representing HTTPS" />
+    <img src="wikipemedia.png"
+         alt="wikipemedia.png" />
   </section>
 
   <footer>
