@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Step 3: Gradient Header */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Step 4: Main Content Styling */
+.content {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Step 5: Navigation Styling & Hover Effects */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #ff7e5f;
+    border-radius: 5px;
+}
+
+nav ul li a:active,
+nav ul li a:focus {
+    color: #ffd2c1;
+}
+
+/* Step 6: Pseudo-Elements */
+h1::before {
+    content: "🔥 ";
+}
+
+h1::after {
+    content: " 🔥";
+}
+
+/* Step 7: Responsive Layout */
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        margin-right: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Step 8.1: Sidebar Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sidebar {
+    animation: fadeIn 1.5s ease-in-out;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Step 8.3: CSS Grid for Main Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Optional Basic Layout Styles */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+ul {
+    background-color: #e6f2ff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+img {
+    width: 300px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
